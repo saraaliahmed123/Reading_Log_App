@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity">
+
+
+    <ScrollView
+        android:layout_width="364dp"
+        android:layout_height="598dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Title:"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="34dp" />
+
+                <EditText
+                    android:id="@+id/titleInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="67dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="23dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pages Read:"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/read1Input"
+                        android:layout_width="92dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        tools:layout_editor_absoluteX="233dp"
+                        tools:layout_editor_absoluteY="180dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:text="   -"
+                        android:textSize="34sp"
+                        tools:layout_editor_absoluteX="202dp"
+                        tools:layout_editor_absoluteY="195dp" />
+
+                    <EditText
+                        android:id="@+id/read2Input"
+                        android:layout_width="92dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        tools:layout_editor_absoluteX="83dp"
+                        tools:layout_editor_absoluteY="180dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="23dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Read:"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="261dp" />
+
+                <EditText
+                    android:id="@+id/dateReadInput"
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="23dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments:"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <EditText
+                    android:id="@+id/commentsInput"
+                    android:layout_width="332dp"
+                    android:layout_height="92dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="442dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="23dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent Comments:"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="563dp" />
+
+                <EditText
+                    android:id="@+id/parentInput"
+                    android:layout_width="332dp"
+                    android:layout_height="92dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="600dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    app:backgroundTint="#4983BB" />
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    app:backgroundTint="#4984BC" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    app:backgroundTint="#4984BC" />
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Done"
+                    app:backgroundTint="#4984BC" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
